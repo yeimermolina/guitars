@@ -31,7 +31,7 @@
     <div class="contenedor">
       <h1 class="titulo">Guitarras inviesibles</h1><!-- titulo -->
       <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
-      <button>Conoce mas</button><!-- boton -->
+      <button class="button">Conoce mas</button><!-- boton -->
     </div>
     
   </section>
@@ -62,5 +62,57 @@
       
     </article>
   </section>
+  
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="contacto">
+        <img src="img/invie-white.png" alt="logo blanco">
+        <a href="tel:+584125806456"><strong>Telefono</strong><span>555555555</span></a>
+        <a href="mailto:yeimer.molina@gmail.com"><strong>Email</strong><span>yeimolina@gmail.com</span></a>
+      </div>
+      
+      <form class="formulario">
+        <div class="col-1">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+          <label for="email">Correo</label>
+          <input type="email" required name="email" id="email" />
+          
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" name="sexo" id="mujer" value="M"> Mujer
+            </label>
+            <label for="hombre">
+              <input type="radio" name="sexo" id="hombre" value="H" checked> Hombre
+            </label>
+          </div>
+          
+          <div class="intereses">
+            <label for="cotizacion">
+              <input type="checkbox" name="intereses" id="cotizacion" value="CO" checked> Cotizacion
+            </label>
+            <label for="reclamos">
+              <input type="checkbox" name="intereses" id="reclamos" value="R"> Reclamos
+            </label>
+            <label for="comentarios">
+              <input type="checkbox" name="intereses" id="comentarios" value="C"> Comentarios
+            </label>
+            <label for="otros">
+              <input type="checkbox" name="intereses" id="otros" value="O"> Otros
+            </label>
+          </div>
+        </div>
+        
+        
+        <div class="col-2">
+          <label for="comentario">Comentarios</label>
+          <textarea name="comentario" rows="7" cols="30"></textarea>
+          <input type="submit" value="Enviar" class="button">
+        </div>
+        
+      </form>
+    </div>
+    
+  </footer>
 </body>
 </html>
